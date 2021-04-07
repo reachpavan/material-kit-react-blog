@@ -29,7 +29,7 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Menu"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -37,6 +37,18 @@ export default function HeaderLinks(props) {
           buttonIcon={Apps}
           dropdownList={[
             <Link to="/" className={classes.dropdownLink}>
+              Home
+            </Link>,
+            <Link to="/schedule" className={classes.dropdownLink}>
+              Work Schedule
+            </Link>,
+            <Link to="/profile" className={classes.dropdownLink}>
+              Profile
+            </Link>,
+            <Link to="/login" className={classes.dropdownLink}>
+              Login
+            </Link>,
+            <Link to="/components" className={classes.dropdownLink}>
               All components
             </Link>,
             <a
@@ -49,7 +61,7 @@ export default function HeaderLinks(props) {
           ]}
         />
       </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Button
           href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
           color="transparent"
@@ -58,13 +70,13 @@ export default function HeaderLinks(props) {
         >
           <CloudDownload className={classes.icons} /> Download
         </Button>
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
+        <Tooltip title="Delete">
           <IconButton aria-label="Delete">
             <DeleteIcon />
           </IconButton>
-        </Tooltip>*/}
+        </Tooltip>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
@@ -72,7 +84,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            // href="https://twitter.com/CreativeTim?ref=creativetim"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -90,7 +102,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
+            // href="https://www.facebook.com/CreativeTim?ref=creativetim"
             target="_blank"
             className={classes.navLink}
           >
@@ -107,7 +119,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            // href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
             target="_blank"
             className={classes.navLink}
           >
