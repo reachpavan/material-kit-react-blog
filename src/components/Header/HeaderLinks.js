@@ -72,11 +72,11 @@ export default function HeaderLinks(props) {
         </Button>
       </ListItem> */}
       <ListItem className={classes.listItem}>
-        <Tooltip title="Delete">
+        {/* <Tooltip title="Delete">
           <IconButton aria-label="Delete">
             <DeleteIcon />
           </IconButton>
-        </Tooltip>
+        </Tooltip> */}
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
